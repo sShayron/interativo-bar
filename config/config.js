@@ -18,7 +18,7 @@ var config = {
       name: 'bar-interativo-server'
     },
     port: process.env.PORT || 3000,
-    db: 'postgres://localhost/bar-interativo-server-test'
+    db: 'postgres://localhost/barinterativoservertest'
   },
 
   production: {
@@ -27,7 +27,7 @@ var config = {
       name: 'bar-interativo-server'
     },
     port: process.env.PORT || 3000,
-    db: 'postgres://192.168.99.100/bar-interativo-db'
+    db: 'postgres://192.168.99.100/barinterativodb'
   }
 };
 

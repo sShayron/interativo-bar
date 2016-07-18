@@ -19,5 +19,5 @@ services:
     environment:
       - POSTGRES_PASSWORD=passw0rd
       - POSTGRES_USER=admin
-      - POSTGRES_DB=bar-interativo
+      - POSTGRES_DB=barinterativoservertest
       - PGDATA=/var/lib/postgresql/data
