@@ -53,7 +53,6 @@ router.delete('/:id', function(req, res, next) {
   models.Bares.findById(req.params.id).then(function (bares) {
     if(!bares){
       res.status(404).json("Nenhum bar encontrado!");
-      console.log("MY EGSS");
       return;
     }
   });

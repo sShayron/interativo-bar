@@ -9,7 +9,8 @@ var config = {
       name: 'bar-interativo-server'
     },
     port: process.env.PORT || 3000,
-    db: 'postgres://admin:passw0rd@192.168.99.100:32776/barinterativo'
+    db: 'postgres://admin:passw0rd@localhost:32776/barinterativo'
+    //db: 'postgres://admin:passw0rd@192.168.99.100:32776/barinterativo'
   },
 
   test: {

@@ -1,9 +1,9 @@
-// Example model
+
 
 
 module.exports = function (sequelize, DataTypes) {
 
-  var Inicial = sequelize.define('Inicial', {
+  var Inicial = sequelize.define('inicial', {
     title: DataTypes.STRING,
     url: DataTypes.STRING,
     text: DataTypes.STRING
@@ -12,7 +12,7 @@ module.exports = function (sequelize, DataTypes) {
     classMethods: {
       associate: function (models) {
         // example on how to add relations
-        // Article.hasMany(models.Comments);
+        // Inicial.hasMany(models.Bares);
       }
     }
   });
