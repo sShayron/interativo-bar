@@ -3,7 +3,7 @@
 
 module.exports = function (sequelize, DataTypes) {
 
-  var Inicial = sequelize.define('inicial', {
+  var Inicial = sequelize.define('Inicial', {
     title: DataTypes.STRING,
     url: DataTypes.STRING,
     text: DataTypes.STRING

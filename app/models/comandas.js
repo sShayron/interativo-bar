@@ -2,7 +2,7 @@ module.exports = function (sequelize, DataTypes) {
 
   var Sequelize = sequelize.Sequelize;
 
-  var Comandas = sequelize.define('comandas', {
+  var Comandas = sequelize.define('Comandas', {
     com_cd_comanda: {
       allowNull: false,
       autoIncrement: true,
@@ -27,15 +27,15 @@ module.exports = function (sequelize, DataTypes) {
       classMethods: {
         associate: function (models) {
 
-          Comandas.hasMany(models.Pedidos, {
+           Comandas.hasMany(models.Pedidos, {
             foreignKey: 'ped_cd_comanda',
-            allowNull: false
-          })
+             allowNull: false
+           })
 
-          Comandas.belongsTo(models.Mesas, {
-            foreignKey: 'com_cd_mesa',
-            allowNull: false
-          })
+           Comandas.belongsTo(models.Mesas, {
+             foreignKey: 'com_cd_mesa',
+             allowNull: false
+           })
         }
       }
   });

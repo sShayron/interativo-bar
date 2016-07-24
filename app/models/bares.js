@@ -2,7 +2,7 @@ module.exports = function (sequelize, DataTypes) {
 
   var Sequelize = sequelize.Sequelize;
 
-  var Bares = sequelize.define('bares', {
+  var Bares = sequelize.define('Bares', {
     bar_cd_bar: {
       allowNull: false,
       autoIncrement: true,
@@ -49,10 +49,10 @@ module.exports = function (sequelize, DataTypes) {
     timestamps: false,
     classMethods: {
       associate: function (models) {
-        // Bares.hasMany(models.Mesas, {
-        //   foreignKey: 'mes_cd_bar',
-        //   allowNull: false
-        // })
+         Bares.hasMany(models.Mesas, {
+           foreignKey: 'mes_cd_bar',
+           allowNull: false
+         })
       }
     }
   });

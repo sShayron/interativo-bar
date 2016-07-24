@@ -2,7 +2,7 @@ module.exports = function (sequelize, DataTypes) {
 
   var Sequelize = sequelize.Sequelize;
 
-  var Pedidos = sequelize.define('pedidos', {
+  var Pedidos = sequelize.define('Pedidos', {
     ped_cd_pedido: {
       allowNull: false,
       autoIncrement: true,
@@ -18,10 +18,10 @@ module.exports = function (sequelize, DataTypes) {
       classMethods: {
         associate: function (models) {
 
-          Pedidos.belongsTo(models.Comandas, {
-            foreignKey: 'ped_cd_comanda',
-            allowNull: false
-          })
+           Pedidos.belongsTo(models.Comandas, {
+             foreignKey: 'ped_cd_comanda',
+             allowNull: false
+           })
         }
       }
   });
