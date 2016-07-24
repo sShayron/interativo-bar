@@ -8,7 +8,7 @@ module.exports = function (app) {
 
 router.get('/', function (req, res, next) {
   models.Bares.findAll().then(function (bares) {
-    res.status(201).json(bares);
+    res.status(200).json(bares);
   });
 });
 
@@ -18,11 +18,11 @@ router.get('/:id', function (req, res, next) {
       res.status(404).json("Nenhum bar encontrado!");
       return;
     }
-    res.status(201).json(bares);
+    res.status(200).json(bares);
   });
 });
 
-//TESTE => curl -v -X POST http://localhost:3000/bares -d '{"bar_ds_nome": "BAR DO BRACIN", "bar_ds_descricao": "BOOTEQUIN DO BRACIN ESCROTAO", "bar_ds_site": "www.bracinboteco.ok" }' -H "Content-Type: application/json"router.post('/', function (req, res, next) {
+//TESTE => curl -v -X POST http://localhost:3000/bares -d '{"bar_ds_nome": "BAR DO BRACIN", "bar_ds_descricao": "BOOTEQUIN DO BRACIN ESCROTAO", "bar_ds_site": "www.bracinboteco.ok" }' -H "Content-Type: application/json"
 router.post('/', function (req, res, next) {
   models.Bares.create(req.body).then(function(bares) {
     res.status(201).json(bares);
@@ -40,7 +40,7 @@ router.put('/:id', function(req, res, next) {
       }
     })
     .then(function(bares) {
-      res.status(201).json(bares);
+      res.status(200).json(bares);
     })
     .catch(function(error) {
       res.status(500).json(error);

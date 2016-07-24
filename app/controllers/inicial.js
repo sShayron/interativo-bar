@@ -8,9 +8,10 @@ module.exports = function (app) {
 
 router.get('/', function (req, res, next) {
   models.Inicial.findAll().then(function (barinterativo) {
-    res.render('index', {
-        title: 'Bar interativo Server',
-      barinterativo: barinterativo
-    });
+    res.status(200).json([]);
+    // res.render('index', {
+    //     title: 'Bar interativo Server',
+    //   barinterativo: barinterativo
+    // });
   });
 });

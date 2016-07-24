@@ -1,0 +1,22 @@
+[
+  {
+    "bar_cd_bar": "1",
+    "bar_ds_nome": "bar do zezin",
+    "bar_tm_abertura": "19:00:00",
+    "bar_tm_fechamento": "05:00:00",
+    "bar_ds_descricao": "barzin pe do porco memo",
+    "bar_ds_site": "www.barzezin.com.br",
+    "bar_ds_cidade": "Vila Velha",
+    "bar_ds_complemento": "perto do shop"
+  },
+  {
+    "bar_cd_bar": "2",
+    "bar_ds_nome": "sofa hebe",
+    "bar_tm_abertura": "15:00:00",
+    "bar_tm_fechamento": "07:00:00",
+    "bar_ds_descricao": "bar juvenil de vix",
+    "bar_ds_site": "www.hebe.com.br",
+    "bar_ds_cidade": "Vitória",
+    "bar_ds_complemento": "frente a UFES lixo"
+  }
+]

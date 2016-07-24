@@ -9,7 +9,7 @@ module.exports = function (app) {
 
 router.get('/', function (req, res, next) {
   models.Mesas.findAll().then(function (mesas) {
-    res.status(201).json(mesas);
+    res.status(200).json(mesas);
   });
 });
 
@@ -19,7 +19,7 @@ router.get('/:id', function (req, res, next) {
       res.status(404).json("Nenhuma mesa encontrada!");
       return;
     }
-    res.status(201).json(mesa);
+    res.status(200).json(mesa);
   });
 });
 
