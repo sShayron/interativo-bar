@@ -8,9 +8,14 @@ var config = {
     app: {
       name: 'bar-interativo-server'
     },
-    port: process.env.PORT || 3000,
+     port:"32776",
+     username: "admin",
+     password: "passw0rd",
+     database: "barinterativo",
+     dialect: "postgres",
+     host: "192.168.99.100",
+     db: 'postgres://admin:passw0rd@192.168.99.100:32776/barinterativo'
     //db: 'postgres://admin:passw0rd@localhost:32776/barinterativo'
-    db: 'postgres://admin:passw0rd@192.168.99.100:32776/barinterativo'
   },
 
   test: {
@@ -18,8 +23,8 @@ var config = {
     app: {
       name: 'bar-interativo-server'
     },
-    port: process.env.PORT || 3000,
-    db: 'postgres://localhost/barinterativoservertest'
+    port:"32776",
+    db: 'postgres://admin:passw0rd@192.168.99.100:32776/barinterativotest'
   },
 
   production: {
@@ -27,8 +32,8 @@ var config = {
     app: {
       name: 'bar-interativo-server'
     },
-    port: process.env.PORT || 3000,
-    db: 'postgres://192.168.99.100/barinterativodb'
+    port:"32776",
+    db: 'postgres://admin:passw0rd@192.168.99.100:32776/barinterativodb'
   }
 };
 
