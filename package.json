@@ -7,7 +7,7 @@
     "docker": "sh -c 'docker-machine start; eval $(docker-machine env)'",
     "db": "docker-compose up -d dev",
     "migrate": "node ./app/migrations/sync.js",
-    "seeder": "sequelize db:seed:all"
+    "seeders": "sequelize db:seed:all"
   },
   "dependencies": {
     "body-parser": "^1.13.3",

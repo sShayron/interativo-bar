@@ -14,7 +14,7 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/:id', function (req, res, next) {
-  models.Mesas.findById(req.params.id).then(function (messa) {
+  models.Mesas.findById(req.params.id).then(function (mesa) {
     if(!mesa){
       res.status(404).json("Nenhuma mesa encontrada!");
       return;
