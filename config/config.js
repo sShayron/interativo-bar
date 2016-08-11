@@ -8,13 +8,13 @@ var config = {
     app: {
       name: 'bar-interativo-server'
     },
-     port:"32776",
-     username: "admin",
-     password: "passw0rd",
+     port:"5432",
+     username: "postgres",
+     password: "postgres",
      database: "barinterativo",
      dialect: "postgres",
-     host: "192.168.99.100",
-     db: 'postgres://admin:passw0rd@192.168.99.100:32776/barinterativo'
+     host: "localhost",
+     db: 'postgres://postgres:postgres@localhost:5432/barinterativo'
     //db: 'postgres://admin:passw0rd@localhost:32776/barinterativo'
   },
 
